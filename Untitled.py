@@ -40,7 +40,7 @@ def show_images(immagine, vanilla_map, smooth_map):
   if smooth_map is not None:
 
     fig, ax = plt.subplots(1, 3, figsize=(7, 7))
-    a = ax[2].imshow(smooth_map, cmap="gary")
+    a = ax[2].imshow(smooth_map, cmap="gray")
     ax[2].axis('off')
 
   else:
