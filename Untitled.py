@@ -27,6 +27,7 @@ def do_plot(history, n_epochs):
         ax[ax_index].legend(loc="best", prop={'size': 8})
 
     plt.show()
+    print(); print()
 
 def show_two_images(immagine, vanilla_map):
 
