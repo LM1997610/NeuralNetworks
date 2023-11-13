@@ -21,7 +21,7 @@ def do_plot(history, n_epochs):
         ax[ax_index].set_title(f'\n {"Loss" if i == 0 else "Classification Accuracy"} History\n', fontsize=14)
         ax[ax_index].set_xlabel('\n Epochs')
         ax[ax_index].set_ylabel('Loss' if i == 0 else 'Classification accuracy')
-        ax[ax_index].set_xticks(x)
+        ax[ax_index].set_xticks(list(range(1, n_epochs + 1, 2)))
         ax[ax_index].grid(linewidth=0.5)
         
         ax[ax_index].legend(loc="best", prop={'size': 8})
