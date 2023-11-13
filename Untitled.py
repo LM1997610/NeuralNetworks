@@ -57,3 +57,24 @@ def show_images(immagine, vanilla_map, smooth_map):
   plt.show()
 
 
+def show_images_2(images_index_list, plot_in_rows = 5):
+  
+  fig, ax = plt.subplots(len(images_index_list), plot_in_rows, figsize=(7, 5))
+
+  for a in range(len(images_index)):
+
+      this_list, titles = evaluate_on_sigma(images_index_list[a])
+
+      for i in range(len(this_list)):
+
+          im = ax[a][i].imshow(this_list[i], cmap="gray", aspect="auto")
+          ax[a][i].axis('off')
+
+          if i<5 and a<1:
+              ax[a][i].set_title(titles[i])
+
+      #cbar = plt.colorbar(im, ax=ax[a])
+
+  plt.subplots_adjust(wspace=0.04, hspace=0.05)
+  plt.show()
+
