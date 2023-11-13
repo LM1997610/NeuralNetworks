@@ -51,7 +51,7 @@ def show_images(images_index_list, evaluate_on_sigma, plot_in_rows = 5):
 
   for a in range(len(images_index_list)):
 
-      this_list, titles = evaluate_on_sigma(images_index_list[a], noise_list)
+      this_list, titles = evaluate_on_sigma(images_index_list[a])
 
       for i in range(len(this_list)):
 
