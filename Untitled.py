@@ -61,7 +61,7 @@ def show_images_2(images_index_list, plot_in_rows = 5):
   
   fig, ax = plt.subplots(len(images_index_list), plot_in_rows, figsize=(7, 5))
 
-  for a in range(len(images_index)):
+  for a in range(len(images_index_list)):
 
       this_list, titles = evaluate_on_sigma(images_index_list[a])
 
