@@ -28,31 +28,23 @@ def do_plot(history, n_epochs):
 
     plt.show()
 
-def show_images(immagine, vanilla_map, smooth_map):
+def show_two_images(immagine, vanilla_map):
 
-  #mappa, g = silency_map(test_images[indx], model)
+    fig, ax = plt.subplots(1, 2, figsize=(4, 4))
 
-  if smooth_map is not None:
+    for i in range(2):
 
-    fig, ax = plt.subplots(1, 3, figsize=(7, 7))
-    a = ax[2].imshow(smooth_map, cmap="gray")
-    ax[2].axis('off')
+        ax[i].imshow(immagine if i == 0 else vanilla_map, cmap="gray", aspect="equal")
+        ax[i].axis('off')
 
-  else:
-    fig, ax = plt.subplots(1, 2, figsize=(5, 5))
+    cax = fig.add_axes([0.95, 0.3, 0.02, 0.39])
+    fig.colorbar(ax[1].imshow(vanilla_map, cmap="gray", aspect="equal"), cax, orientation='vertical')
 
-  ax[0].imshow(immagine)
-  ax[0].axis('off')
-
-  a = ax[1].imshow(vanilla_map, cmap="gray")
-  ax[1].axis('off')
+    plt.subplots_adjust(wspace=0.04)
+    plt.show()
 
 
-  plt.colorbar(a, ax = ax, fraction=0.022, pad=0.08)
-  plt.show()
-
-
-def show_images_2(images_index_list, evaluate_on_sigma, noise_list = [0.0, 0.10, 0.20, 0.40], plot_in_rows = 5):
+def show_images(images_index_list, evaluate_on_sigma, plot_in_rows = 5):
   
   fig, ax = plt.subplots(len(images_index_list), plot_in_rows, figsize=(7, 5))
 
@@ -67,8 +59,6 @@ def show_images_2(images_index_list, evaluate_on_sigma, noise_list = [0.0, 0.10,
 
           if i<5 and a<1:
               ax[a][i].set_title(titles[i])
-
-      #cbar = plt.colorbar(im, ax=ax[a])
 
   plt.subplots_adjust(wspace=0.04, hspace=0.05)
   plt.show()
