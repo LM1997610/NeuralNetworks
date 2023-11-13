@@ -57,13 +57,13 @@ def show_images(immagine, vanilla_map, smooth_map):
   plt.show()
 
 
-def show_images_2(images_index_list, plot_in_rows = 5):
+def show_images(images_index_list, evaluate_on_sigma, noise_list = [0.0, 0.10, 0.20, 0.40], plot_in_rows = 5):
   
   fig, ax = plt.subplots(len(images_index_list), plot_in_rows, figsize=(7, 5))
 
-  for a in range(len(images_index_list)):
+  for a in range(len(images_index)):
 
-      this_list, titles = evaluate_on_sigma(images_index_list[a])
+      this_list, titles = evaluate_on_sigma(images_index_list[a], noise_list)
 
       for i in range(len(this_list)):
 
