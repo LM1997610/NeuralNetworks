@@ -1,12 +1,12 @@
 
 import matplotlib.pyplot as plt
 
-def do_plot(history, n_epochs, xticks):
+def do_plot(history, xticks):
 
     fig, ax = plt.subplots(1, 2, figsize=(11, 3))
     fig.tight_layout(pad=4, w_pad=6.5)
     
-    x = list(range(1, n_epochs + 1))
+    x = list(range(1, len(history.history["loss"]) + 1))
     
     plot_info = [{'label_prefix': '', 'color': 'red'},
                  {'label_prefix': 'val_', 'color': 'green'}]
@@ -21,7 +21,7 @@ def do_plot(history, n_epochs, xticks):
         ax[ax_index].set_title(f'\n {"Loss" if i == 0 else "Classification Accuracy"} History\n', fontsize=14)
         ax[ax_index].set_xlabel('\n Epochs')
         ax[ax_index].set_ylabel('Loss' if i == 0 else 'Classification accuracy')
-        ax[ax_index].set_xticks(list(range(1, n_epochs + 1, xticks)))
+        ax[ax_index].set_xticks(list(range(1, len(history.history["loss"]) + 1, xticks)))
         ax[ax_index].grid(linewidth=0.5)
         
         ax[ax_index].legend(loc="best", prop={'size': 8})
