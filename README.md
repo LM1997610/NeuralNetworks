@@ -1,4 +1,4 @@
-## Neural Networks for DS
+# Neural Networks for DS
 
 ### Homework 1: Saliency maps for Explanaibility
 References:
@@ -8,3 +8,5 @@ References:
 &ensp;&thinsp;&ensp; [2] Smilkov, D., Thorat, N., Kim, B., Viégas, F. and Wattenberg, M., 2017. [SmoothGrad: removing noise by adding noise](https://arxiv.org/abs/1706.03825). arXiv preprint arXiv:1706.03825.
 
 &ensp;&thinsp;&ensp;[3] Rudin, C., 2019. 1 [Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead](https://www.nature.com/articles/s42256-019-0048-x). Nature Machine Intelligence, 1(5), pp. 206-215.
+
+### Homework 2:
