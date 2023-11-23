@@ -1,6 +1,6 @@
-## NN
+## Neural Networks for DS
 
-### **Homework 1:** Saliency maps for Explanaibility
+### Homework 1: Saliency maps for Explanaibility
 References:
 
 &ensp;&thinsp;&ensp; [1] Simonyan, K., Vedaldi, A. and Zisserman, A., 2013. [Deep inside convolutional networks: Visualising image classification models and saliency maps](https://arxiv.org/abs/1312.6034). arXiv preprint arXiv:1312.6034.
