@@ -3,7 +3,9 @@
 ### **Homework 1:** Saliency maps for Explanaibility
 References:
 
-&ensp;&thinsp;&ensp; [1] Simonyan, K., Vedaldi, A. and Zisserman, A., 2013. [Deep inside convolutional networks: Visualising image classification models and saliency maps](https://arxiv.org/abs/1312.6034). arXiv preprint arXiv:1312.6034.
+&ensp;&thinsp;&ensp; [1] Simonyan, K., Vedaldi, A. and Zisserman, A., 2013.\
+&ensp;&thinsp;&ensp; [Deep inside convolutional networks: Visualising image classification models and saliency maps](https://arxiv.org/abs/1312.6034). \
+&ensp;&thinsp;&ensp; arXiv preprint arXiv:1312.6034.
 
 &ensp;&thinsp;&ensp; [2] Smilkov, D., Thorat, N., Kim, B., Viégas, F. and Wattenberg, M., 2017. [SmoothGrad: removing noise by adding noise](https://arxiv.org/abs/1706.03825). arXiv preprint arXiv:1706.03825.
 
