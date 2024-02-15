@@ -53,7 +53,7 @@ class ApexDetection(datasets.VisionDataset):
       target["iscrowd"]= iscrowd
 
       if self.transforms is not None:
-            img, target = self.transforms(img, target)
+            image, target = self.transforms(image, target)
 
       return image, target
 
